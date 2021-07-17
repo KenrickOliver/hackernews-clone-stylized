@@ -1,1 +1,1 @@
-# hackernews-clone-stylized
+# Hackernews Clone
