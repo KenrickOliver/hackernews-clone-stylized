@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hackernews Clone</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <h1 class="logo">
+            <a href="/index.html">Hackernews Clone</a>
+          </h1>
+          <ul>
+            <!-- https://node-hnapi.herokuapp.com/news  -->
+            <li><a href="#/" class="header-link" class="active">Top</a></li>
+            <!-- https://node-hnapi.herokuapp.com/newest -->
+            <li><a href="#/new" class="header-link">New</a></li>
+            <!-- https://node-hnapi.herokuapp.com/ask -->
+            <li><a href="#/ask" class="header-link">Ask</a></li>
+            <!-- https://node-hnapi.herokuapp.com/show -->
+            <li><a href="#/show" class="header-link">Show</a></li>
+            <!-- https://node-hnapi.herokuapp.com/jobs -->
+            <li><a href="#/jobs" class="header-link">Jobs</a></li>
+            <li><a href="#/favorites" class="header-link">Favorites</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Content Area -->
+      <div id="route-container">
+        <div id="router-path"></div>
+        <div id="router-outlet"></div>
+      </div>
+    </main>
+    <script type="module" src="app.js"></script>
+    <!-- <script src="//unpkg.com/navigo"></script> -->
+    <script src="//unpkg.com/navigo@6"></script>
+    <!-- Docs: https://npmjs.com/package/navigo -->
+  </body>
+</html>
