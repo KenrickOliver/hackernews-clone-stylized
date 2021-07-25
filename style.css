@@ -52,7 +52,7 @@ header {
 .nav a {
   color: #fff;
   text-decoration: none;
-  padding: 7px 15px;
+  padding: 8px 15px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -63,6 +63,7 @@ header {
 
 .nav-active a {
   color: #222;
+  font-weight: bold;
 }
 .nav-active .container {
   padding: 20px 0;
@@ -72,6 +73,7 @@ header {
 .nav a:hover {
   color: #ff6600;
   font-weight: bold;
+  border-bottom: 2px solid #ff6600;
 }
 
 /* END nav Styling */
@@ -87,7 +89,7 @@ header {
 
 .gray {
   margin-top: 0.25em;
-  color: rgb(14, 14, 187);
+  color: #333;
 }
 
 h2 a {
@@ -96,6 +98,7 @@ h2 a {
 }
 
 /* *** CUSTOM POST STYLING *** */
+
 .post {
   position: relative;
   background-color: #4992d3;
@@ -104,6 +107,7 @@ h2 a {
   border-radius: 3px;
   padding: 20px;
   margin: 40px 0;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   width: 80vw;
@@ -113,6 +117,16 @@ h2 a {
 .post .post-title {
   margin: 0;
   color: white;
+}
+
+.post .post-title a:hover {
+  color: #333;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.post .post-url {
+  color: lightgray;
 }
 
 .post .post-body {
@@ -140,4 +154,74 @@ h2 a {
   justify-content: center;
   padding: 7px 10px;
   box-shadow: 0px 1px 1px #999;
+}
+
+.error-text {
+  margin: 0.25em 0 0.5em;
+  padding: 0;
+  color: red;
+  font-style: bold;
+}
+
+/* *** Comments Styling *** */
+.comment-heading {
+  color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+.comment {
+  background-color: rgb(246, 246, 239);
+  padding: 10px;
+}
+
+.comment-header {
+  /* color: rgb(246, 246, 239); */
+  color: #222;
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.comment-text {
+  margin: 0.4em 0;
+  font-size: 1rem;
+}
+
+.comment-reply {
+  text-decoration: underline !important;
+  font-size: 0.75rem;
+}
+
+.nested-comments-0 {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.nested-comments-1 {
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+  padding-top: 0.3em;
+  padding-left: 0.75em;
+}
+
+.nested-comments-2 {
+  margin-left: 3em;
+  margin-bottom: 0.5em;
+  padding-top: 0.3em;
+  padding-left: 0.75em;
+}
+
+.nested-comments-3 {
+  margin-left: 4em;
+  margin-bottom: 0.5em;
+  padding-top: 0.3em;
+  padding-left: 0.75em;
+}
+
+.nested-comments-4 {
+  margin-left: 5em;
+  margin-bottom: 0.5em;
+  padding-top: 0.3em;
+  padding-left: 0.75em;
 }
