@@ -19,9 +19,8 @@ export default function Story(story) {
                 </a>
                 |
                 <span class="favorite">
-                <img class="heart" src="">
-                Add To Favorites
-            </span>
+                Add To Favorites <i class='bx bx-heart'></i>
+                </span>
             </div>
         </div>
     `;
