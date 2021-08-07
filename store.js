@@ -16,7 +16,7 @@ const initialState = {
 
 //setting up simple reducer function
 
-function favoriteReducer(state, action) {
+function favoritesReducer(state = initialState, action) {
     switch (action.type) {
         case "ADD_FAVORITE": {
             const addedFavorite = action.payload.favorite;
@@ -38,9 +38,9 @@ function favoriteReducer(state, action) {
 }
 
 // to add anything to state we need an "action" and a "payload(provides data)"
-const action = { type: "ADD_FAVORITE", payload: { favorite: {title: "story1", id: 1} } }
+// const action = { type: "ADD_FAVORITE", payload: { favorite: {title: "story1", id: 1} } }
 
-const store = createStore(favoriteReducer); //creating a store and passing our favorite reducer in there
+const store = createStore(favoritesReducer); //creating a store and passing our favorite reducer in there
 
 
 
