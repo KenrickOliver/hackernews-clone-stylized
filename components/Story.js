@@ -13,7 +13,7 @@ export default function Story(story) {
                 <span class="upvote">▲</span>
                 ${story.points || '0'} points by ${story.user || 'unknown'} ${story.time_ago}
                 |
-                <a href="#/item?id=${story.id}">
+                <a href="#/item?id=${story.id}" class="comments">
                 ${story.comments_count || '0'} comments
                 </a>
                 |

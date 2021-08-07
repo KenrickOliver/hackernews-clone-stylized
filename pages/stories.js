@@ -5,7 +5,7 @@ import store from '../store.js';
 
 
 export default async function Stories(path) {
-    const { favorites } = store.getState()
+    const { favorites } = store.getState();
     const stories = await getStories(path);
     const hasStories = stories.length > 0;
 
