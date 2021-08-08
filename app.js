@@ -6,7 +6,6 @@ const nav = document.querySelector('.nav')
 window.addEventListener('scroll', fixedNav)
 
 function fixedNav() {
-    // console.log(window.scrollY, nav.offsetHeight)
     if(window.scrollY > nav.offsetHeight + 150) {
         nav.classList.add('nav-active')
     } else {
@@ -34,8 +33,7 @@ window.onhashchange = () => {
   }
 class App {
     constructor() {
-        new RouterHandler();
-        console.log('app works!')  
+        new RouterHandler(); 
       }  
     }
     
