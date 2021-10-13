@@ -14,11 +14,14 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <div class="container">
-          <h1 class="logo">
-            <a href="#/">Hackernews Clone</a>
-          </h1>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/index.html">Hackernews Clone</a>
+        </div>
+        <a href="#" class="toggle__button"
+          ><i class="bx bx-menu toggle__icon"></i
+        ></a>
+        <div class="navbar__links">
           <ul>
             <!-- https://node-hnapi.herokuapp.com/news  -->
             <li><a href="#/" class="header-link">Top</a></li>
@@ -42,8 +45,8 @@
         <div id="router-outlet"></div>
       </div>
     </main>
-    <script type="module" src="app.js"></script>
     <script src="//unpkg.com/navigo@6"></script>
+    <script type="module" src="app.js"></script>
     <!-- Docs: https://npmjs.com/package/navigo -->
   </body>
 </html>

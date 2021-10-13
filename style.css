@@ -22,12 +22,16 @@ header {
 }
 
 /* START nav Styling */
-.nav {
+.navbar {
   position: fixed;
   background-color: #222;
   top: 0;
   left: 0;
   right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: all 0.3s ease-in-out;
   border-radius: 2px;
   border-bottom-left-radius: 3px;
@@ -36,24 +40,35 @@ header {
   z-index: 9999;
 }
 
-.nav .container {
+.logo {
+  font-size: 2rem;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  margin: 1em;
+}
+
+.navbar .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
 }
-.nav ul {
+.navbar ul {
   display: flex;
   list-style-type: none;
   align-items: center;
   justify-content: center;
 }
 
-.nav a {
+.navbar a {
   color: #fff;
   text-decoration: none;
   padding: 8px 15px;
   transition: all 0.3s ease-in-out;
+  font-size: 1.2em;
 }
 
 .nav-active {
@@ -65,15 +80,27 @@ header {
   color: #222;
   font-weight: bold;
 }
-.nav-active .container {
+.nav-active .navbar__links {
   padding: 20px 0;
 }
 
-.nav .active,
-.nav a:hover {
+.navbar .active,
+.navbar a:hover {
   color: #ff6600;
   font-weight: bold;
-  border-bottom: 2px solid #ff6600;
+}
+
+.toggle__button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: #fff;
+}
+
+.toggle__button .bx-menu {
+  color: #ff6600;
+  font-size: 2em;
 }
 
 /* END nav Styling */
@@ -260,4 +287,61 @@ a.comments:hover {
 .default-fav {
   font-size: 1.5rem;
   color: white;
+}
+
+/*** MEDIA Query for responsive navbar ***/
+@media screen and (max-width: 650px) {
+  .toggle__button {
+    display: inline-block;
+  }
+
+  .toggle__button .bx-x {
+    color: #ff6600;
+    font-size: 2em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul li {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .navbar__links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar__links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar__links li {
+    text-align: center;
+  }
+
+  .navbar__links li a {
+    padding: 1em;
+    margin: 0.5em;
+  }
+
+  .navbar__links.active {
+    display: flex;
+  }
+
+  .navbar .active,
+  .navbar a:hover {
+    color: #ff6600;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .logo {
+    font-size: 1.5rem;
+  }
 }
